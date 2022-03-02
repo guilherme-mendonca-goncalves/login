@@ -7,24 +7,31 @@
     <meta name="description" content="Faça o login do seu site por aqui.">
     <meta name="keywords" content="entrar, registrar">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div>
+    <div class="loginContainer">
       <h1>Login</h1>
-      <form>
+      <form class="formContainer">
         <label for="email">E-mail</label>
-        <input type="email" placeholder="Digite o seu e-mail">
+        <input type="email" name="email" id="email" placeholder="Digite o seu e-mail">
         <label for="password">Senha</label>
-        <input type="password" placeholder="Digite a sua senha">
-        <a href="#">Esqueceu sua senha?</a>
-        <input type="submit" value="Entrar">
+        <input type="password" name="password" id="password" placeholder="Digite a sua senha">
+        <a href="#" class="forgotPassword">Esqueceu sua senha?</a>
+        <input type="submit" class="submitClass" value="Entrar">
       </form>
-      <div>
+      <div class="socialContainer">
         <p>Ou</p>
-        <button><i class="fa fa-google"></i> Entre com o Google</button>
-        <button><i class="fa fa-facebook"></i> Entre com o Facebook</button>
+        <button class="buttonGoogle"><svg id="logo_googleg_48dp" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+          <path id="Shape" d="M18.6,9.409a11.49,11.49,0,0,0-.182-2.045H9v3.868h5.382a4.6,4.6,0,0,1-2,3.018v2.509h3.232A9.753,9.753,0,0,0,18.6,9.409Z" transform="translate(1 0.818)" fill="#4285f4" fill-rule="evenodd"></path>
+          <path id="Shape-2" data-name="Shape" d="M9.894,18.81a9.547,9.547,0,0,0,6.618-2.423L13.28,13.878A6.033,6.033,0,0,1,4.3,10.71H.957V13.3A10,10,0,0,0,9.894,18.81Z" transform="translate(0.106 1.19)" fill="#34a853" fill-rule="evenodd"></path>
+          <path id="Shape-3" data-name="Shape" d="M4.4,11.349a5.912,5.912,0,0,1,0-3.8V4.958H1.064a10.013,10.013,0,0,0,0,8.982L4.4,11.349Z" transform="translate(0 0.551)" fill="#fbbc05" fill-rule="evenodd"></path>
+          <path id="Shape-4" data-name="Shape" d="M9.894,3.977a5.4,5.4,0,0,1,3.823,1.5L16.585,2.6A9.61,9.61,0,0,0,9.894,0,10,10,0,0,0,.957,5.509L4.3,8.1a5.96,5.96,0,0,1,5.6-4.123Z" transform="translate(0.106)" fill="#ea4335" fill-rule="evenodd"></path>
+          <path id="Shape-5" data-name="Shape" d="M0,0H20V20H0Z" fill="none" fill-rule="evenodd"></path>
+          </svg></i>&nbsp &nbsp Entre com o Google</button>
+        <button class="buttonFacebook"><i class="fa fa-facebook" style="color: white;"></i>&nbsp Entre com o Facebook</button>
       </div>
-      <div>
+      <div class="registerContainer">
         <p>Ainda não tem uma conta?</p>
         <a href="#">Criar uma conta.</a>
       </div>

@@ -1,0 +1,144 @@
+/*Remove todas as configurações da página*/
+* {
+  border: none;
+  box-sizing: border-box;
+  color: #323232;
+  font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/*Tirar borda ao selecionar input*/
+textarea:focus, input:focus {
+  outline: none;
+}
+
+/*Utilizar o rem para garantir a adaptabilidade dos dispositívos*/
+a {
+  font-size: 0.8rem;
+}
+
+/*Efeito de quando passa o mouse em cima de um link*/
+a:hover {
+ color: #08558B;
+}
+
+body{
+  background-attachment: fixed;
+  background-image: url('/images/loginBackground.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+/*Utilizar o vh para adaptar a tela do usuário*/
+/*div centralizada -> distancia do topo auto 0 auto */
+.loginContainer {
+  background-color: white;
+  border-radius: 10px;
+  margin: 10vh auto 0 auto;
+  padding: 20px 30px;
+  text-align: center;
+  width: fit-content;
+}
+
+/*Afasta do título e das redes sociais*/
+.formContainer {
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+/*block: Faz com que ocupe 100% da largura do container, ficando um em baixo do outro*/
+label, input {
+  display: block;
+  text-align: left;
+  width: 100%;
+}
+
+/*bold = negrito*/
+label {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+input {
+  border-bottom: 2px solid #323232;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+input:focus {
+  border-bottom: 2px solid #08558B;
+}
+
+.forgotPassword {
+  display: block;
+}
+
+.submitClass {
+  background-color: #08558B;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  height: 40px;
+  margin-top: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.submitClass:hover {
+  background-color: #1B223C;
+  transition: 0.5s;
+}
+
+.socialContainer {
+  margin-bottom: 20px;
+}
+
+.buttonGoogle {
+  display: block;
+  width: 100%;
+  border-radius: 20px;
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #323232;
+  background-color: white;
+  height: 30px;
+  box-shadow: 0 2px 10px #b8b8b8;
+}
+
+.buttonGoogle:hover {
+  background-color: #1B223C;
+  color: white;
+  transition: 0.5s;
+}
+
+.logoFacebook {
+  color: white;
+}
+
+.buttonFacebook {
+  display: block;
+  width: 100%;
+  border-radius: 20px;
+  margin-top: 10px;
+  font-size: 1rem;
+  color: white;
+  background-color: #1877f2;
+  height: 30px;
+}
+
+.buttonFacebook:hover {
+  background-color: #1B223C;
+  transition: 0.5s;
+}
+
+.registerContainer {
+  margin-bottom: 20px;
+}
+
+.registerContainer p {
+  margin-bottom: 10px;
+}
